@@ -108,31 +108,38 @@
                                 <li class="first"><a href="index.php" id="nav-bt0"><span></span> 
                                         <!--<div class="nav-br"></div>--> 
                                     </a></li>
-                                <li> <a id="nav-bt2" style="cursor:default;">CLIENTES
+                                <li> <a id="nav-bt1" style="cursor:default;" >Quienes Somos
                                         <div class="nav-br"></div>
                                     </a>
                                     <ul class="sub-nav">
-                                        <li><a href="javascript:" onclick="pagina('oferta', 'Nuestra oferta de mercado')">Nuestra oferta de mercado</a></li>
-                                        <li><a href="javascript:" onclick="pagina('calidad', 'Calidad En El Trabajo. Excelencia En El Servicio')">Calidad En El Trabajo. Excelencia En El Servicio</a></li>
-                                        <li><a href="javascript:" onclick="pagina('hclientes', 'Historial de clientes')">Historial de clientes</a></li>
+                                        <li><a href="javascript:" >Perfil de la compañia</a></li>
+                                        <li><a href="javascript:" >Permisos y habilidades</a></li>
+                                        <li><a href="javascript:" >Misión</a></li>
+                                        <li><a href="javascript:" >Visión</a></li>
+                                        <li><a href="javascript:" >Valores Corporativos</a></li>
                                     </ul>
                                 </li>
-                                <li> <a id="nav-bt3" style="cursor:default;">SERVICIOS
+                                <li> <a id="nav-bt2" style="cursor:default;">Proyectos
+                                        <div class="nav-br"></div>
+                                    </a>
+                                    
+                                </li>
+                                <li> <a id="nav-bt3" style="cursor:default;">Servicio
                                         <div class="nav-br"></div>
                                     </a>
                                     <ul class="sub-nav">
-                                        <li><a href="javascript:" onclick="pagina('servicios', 'Nuestros Servicios')">Nuestros Servicios</a></li>
-                                        <li><a href="javascript:" onclick="pagina('cliente_proveedor', 'CLIENTE - PROVEEDOR')">CLIENTE - PROVEEDOR</a></li>
+                                        <li><a href="javascript:" >Nuestros Servicios</a></li>
+                                        <!--<li><a href="javascript:" >CLIENTE - PROVEEDOR</a></li>-->
                                     </ul>
                                 </li>
-                                <li> <a id="nav-bt4" style="cursor:default;">CONTACTENOS
+                                <li> <a id="nav-bt4" style="cursor:default;">Contactenos
                                         <div class="nav-br"></div>
                                     </a> 
                                     <ul class="sub-nav">
-                                        <li><a href="javascript:" onclick="pagina('contactenos', 'Contactenos')">Contactenos</a></li>
+                                        <li><a href="javascript:" >Contactenos</a></li>
                                     </ul>
                                 </li>
-                                <li> <a id="nav-bt4" style="cursor:default;" onclick="pagina('tnosotros', 'TRABAJE CON NOSOTROS')">TRABAJE CON NOSOTROS
+                                <li> <a id="nav-bt4" style="cursor:default;">TRABAJE CON NOSOTROS
                                         <div class="nav-br"></div>
                                     </a> 
                                 </li>
@@ -201,11 +208,3 @@
     <input type="hidden" id="accion" name="accion">
     <input type="hidden" id="titulo" name="titulo">
 </form>
-<script>
-                                    function pagina(pagina, titulo) {
-                                        $('#accion').val(pagina);
-                                        $('#titulo').val(titulo);
-                                        $('#enviar').submit();
-                                    }
-//                            $(".preload, .load").hide();
-</script>
