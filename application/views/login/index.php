@@ -105,32 +105,44 @@
 
 </style>
 
-<div class="container">
-    <div class="row" style="width: 100%; height: 80px;position: fixed">
-        <div class="col-md-2 col-xs-2 col-sm-2 col-lg-2">
-            <center><img  class="rotarY" src="<?php echo base_url('img/nigsoftlogo.png') ?>" style="width: 30%;height: 50%;z-index: 1"  /></center>
-            <center id="empresa">WWW.NYGSOFT.COM</center>
-        </div>
-        <div class="col-md-8 col-xs-8 col-sm-8 col-lg-8">
-            <div class="row principal">
-                <div class="menu col-md-3 col-xs-3 col-sm-3 col-lg-3" style="z-index: 1;cursor: pointer;">
-                    <a href="#dos">CONOSCANOS</a>
-                </div>
-                <div class="menu col-md-3 col-xs-3 col-sm-3 col-lg-3" style="z-index: 1;cursor: pointer;">
-                    <a href="#tres">PROYECTOS</a>
-                </div>
-                <div class="menu col-md-3 col-xs-3 col-sm-3 col-lg-3" style="z-index: 1;cursor: pointer;">
-                    <a href="#cuatro">CONTÁCTANOS</a>
-                </div>
+<div class="row fondo" id="cero" style="width: 100%;height: 700px;background-color: #ABE9F5;"> 
+    <!--<div id="agrandado" style="width: 16%;background-color: red;position: relative;left: 43%;top: 30%">-->
+        <!--<div class="fondo">-->
+            <!--<div class="cuadro11"></div>
+            <div class="cuadro22"></div>-->
+            <div class="cuadro1"></div>
+            <div class="cuadro1opa"></div>
+            <div class="cuadro2"></div>
+            <div class="cuadro2opa"></div>
+            <div class="cuadro3"></div>
+            <div class="cuadro3opa"></div>
+            <div class="cuadro4"></div>
+            <div class="cuadro4opa"></div>
+            <div class="cuadro5"></div>
+            <div class="cuadro5opa"></div>
+            <div class="cuadro6"></div>    
+            <div class="cuadro6opa"></div>    
+            <div class="cuadro7"></div>    
+            <div class="cuadro7opa"></div>    
+            <div class="cuadro8"></div>    
+            <div class="cuadro8opa"></div>    
+            <div class="cuadro9"></div>    
+            <div class="cuadro9opa"></div>    
+            <div class="cuadro10"></div>    
+            <div class="cuadro10opa"></div>    
+            <div>
+                <img src="<?php echo base_url('img/cubo.png') ?>" alt="Y"  class="cubo">
             </div>
-        </div>
-        <div class="col-md-5 col-xs-5"></div>
-    </div>
-</div>
-<div class="row" id="cero" style="width: 100%;height: 700px;background-color: #ABE9F5;"> 
-    <div id="agrandado" style="width: 16%;background-color: red;position: relative;left: 43%;top: 30%">
-        <img  style="width: 100%;" src="<?php echo base_url('img/nigsoftlogo.png') ?>"  />
-    </div>
+            <div>
+                <img src="<?php echo base_url('img/soft.png') ?>" alt="soft"  class="soft">
+            </div> 
+            <div>
+                <img src="<?php echo base_url('img/n.png') ?>" alt="N"  class="N">
+                <img src="<?php echo base_url('img/g.png') ?>" alt="G"  class="G">
+            </div>
+            <input type='hidden' id='repetir'>
+        <!--</div>-->
+    <!--</div>-->
 </div>
 <div id="uno" class="row" style="width: 100%;height: 500px;background-color: #FABAB3;">
     <div id="agrandado" style="width: 16%;background-color: red;position: relative;left: 67%;top: 30%">
@@ -157,6 +169,7 @@
         <img  style="width: 100%;" src="<?php echo base_url('img/nigsoftlogo.png') ?>"  />
     </div>
 </div>
+<script src="<?php echo base_url('js/animation.js') ?>"></script>
 <script>
     $(".preload, .load").hide();
 
