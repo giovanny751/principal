@@ -1,210 +1,193 @@
-<!DOCTYPE html>
-<!--[if lt IE 8]>	<html lang="es" class="no-js lt-ie8">	<![endif]-->
-<!--[if IE 8]>		<html lang="es" class="no-js ie8">		<![endif]-->
-<!--[if IE 9]>		<html lang="es" class="no-js ie9">		<![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="es" class="no-js">
-    <!--<![endif]-->
-    <head>
-        <title>NYGSOFT</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="Keywords" content="palabras clave" lang="es" />
-        <meta name="Description" content="texto empresarial" lang="es" />
-        <meta name="date" content="2013" />
-        <meta name="author" content="diseño web: imaginamos.com" />
-        <meta name="robots" content="All" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-        <meta name="viewport" content="width=1120, maximum-scale=2" />
-        <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css" />
-        <link href="<?php echo base_url('/assets/global/plugins/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <div id="preload"></div>
-        <div class="con-bw">
-            <div class="info-bw">
-                <div class="head-bw cfx">
-                    <!--aka hay que mpodificar--> 
-                    <div class="logo-bw"><img src="<?php echo base_url() ?>images/nigsoft logo sombrsa.jpg" width="200" height="100" alt=""></div>
-                    <div class="tx-bw">
-                        <h1>Oops!... Lo sentimos, este sitio se ha desarrollado para navegadores modernos con el fin de mejorar tu experiencia.</h1>
-                        <h1>Para que lo puedas disfrutar es necesario actualizar tu navegador o simplemente descargar e instalar uno mejor.</h1>
-                    </div>
-                </div>
-                <div class="con-icon-bw"><a href="https://www.google.com/intl/es/chrome/browser/?hl=es" target="_blank" class="over-bw">
-                        <div class="icon-bw"><img src="<?php echo base_url() ?>assets/img/browser/b-1.png" width="160" height="160" alt=""></div>
-                        <h1>Chrome</h1>
-                    </a></div>
-                <div class="con-icon-bw"><a href="http://www.mozilla.org/es-ES/firefox/new/" target="_blank" class="over-bw">
-                        <div class="icon-bw"><img src="<?php echo base_url() ?>assets/img/browser/b-2.png" width="160" height="160" alt=""></div>
-                        <h1>Firefox</h1>
-                    </a></div>
-                <div class="con-icon-bw"><a href="http://support.apple.com/kb/DL1531?viewlocale=es_ES" target="_blank" class="over-bw">
-                        <div class="icon-bw"><img src="<?php echo base_url() ?>assets/img/browser/b-3.png" width="160" height="160" alt=""></div>
-                        <h1>Safari</h1>
-                    </a></div>
-                <div class="con-icon-bw"><a href="http://www.opera.com/es-419/computer/" target="_blank" class="over-bw">
-                        <div class="icon-bw"><img src="<?php echo base_url() ?>assets/img/browser/b-4.png" width="160" height="160" alt=""></div>
-                        <h1>Opera</h1>
-                    </a></div>
+<style>
 
-                <div class="con-icon-bw"><a href="http://windows.microsoft.com/es-es/internet-explorer/download-ie" target="_blank" class="over-bw">
-                        <div class="icon-bw"><img src="<?php echo base_url() ?>assets/img/browser/b-5.png" width="160" height="160" alt=""></div>
-                        <h1>Explorer</h1>
-                    </a></div>
-                <div class="con-bt-bw cfx"><a class="over-bt-bw">
-                        <div class="bt-bw"></div>
-                    </a></div>
-            </div>
+    @media screen and (max-width: 480px){
+
+        body{
+
+            background: url('<?php echo base_url('img/nigsoftlogo.png') ?>');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%; 
+            top: 0%; 
+            left: 0%; 
+            width: 100%; 
+            height: 90%; 
+            bottom: 0;  
+        }
+        div img.load{
+            position: absolute;
+            left: 50%;
+            top: 42%;
+            margin-left: -64px;
+            margin-top: -64px;
+            z-index: 15000;
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px){
+        body{
+            background-image: url('<?php echo base_url('img/nygsoft.png') ?>'); 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%; 
+            top: 0%; 
+            left: 0%; 
+            width: 100%; 
+            height: 90%; 
+            bottom: 0; 
+        }
+        div img.load{
+            position: absolute;
+            left: 47%;
+            top: 42%;
+            margin-left: -64px;
+            margin-top: -64px;
+            z-index: 15000;
+        }
+    }
+    @media screen and (min-width: 768px) {
+
+
+        .fondo{ 
+            background: url('<?php echo base_url('img/y.png') ?>');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%; 
+            top: 0%; 
+            left: 0%; 
+            width: 100%; 
+            height: 90%; 
+            bottom: 0; 
+            /*opacity: 0.8;*/
+            /*               position: fixed; */
+        }
+        div img.load{
+            position: absolute;
+            left: 40%;
+            top: 42%;
+            margin-left: -64px;
+            margin-top: -64px;
+            z-index: 15000;
+        }
+    }
+    div.preload{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+        opacity: 0.8;
+        z-index: 10000;
+    }
+
+    .rotarY{
+        transform:rotateY(0deg);
+        transition-duration: 2s;
+        -webkit-transform:rotateY(0deg);
+        -webkit-transition-duration: 2s;
+    }
+    .rotarY:hover{
+        transform:rotateY(180deg);
+        transition-duration: 2s;
+        -webkit-transform:rotateY(180deg);
+        -webkit-transition-duration: 2s;
+    }
+    @font-face {
+        font-family: "Mystery Quest";
+        src: url("<?php echo base_url('fonts/SPACE_AGE.TTF') ?>");
+    }
+    .menu,#empresa{
+        font-family: Mystery Quest
+    }
+    .menu{
+        padding-top: 3%;
+    }
+
+</style>
+
+<div class="container">
+    <div class="row" style="width: 100%; height: 80px;position: fixed">
+        <div class="col-md-2 col-xs-2 col-sm-2 col-lg-2">
+            <center><img  class="rotarY" src="<?php echo base_url('img/nigsoftlogo.png') ?>" style="width: 30%;height: 50%;z-index: 1"  /></center>
+            <center id="empresa">WWW.NYGSOFT.COM</center>
         </div>
-        <div style="height: 100px;
-             margin: 0 auto;
-             z-index: 190000;
-             background: #fff">
-            <div style="
-                 border: 0 none;
-                 padding: 0;
-                 position: fixed;
-                 text-align: center;
-                 width: 100%;
-                 background: #fff;">
-
-                <header>
-                    <div class="con-header" style="border: 0px solid red; font-size: 9px">
-                        <div class="mg-header cfx">
-                            <div class="header-logo"> <a href="index.php"><img src="<?php echo base_url() ?>images/nigsoft logo.png" height="106" alt=""></a> </div>
-                            <div class="" style="float: right"> <p> <br>
-                                <table style="color: #8C8D8F">
-                                    <tr>
-                                        <td style="width: 30px">
-                                            <img src="<?php echo base_url() ?>assets/img/location.png" height="38px" alt=""><br>
-                                        </td>
-                                        <td>
-                                            <span>gerson@nygsoft.com<br>nelson@nygsoft.com<br>cliente@nygsoft.com</span>
-                                        </td>
-                                        <td>
-                                            <table>
-                                                <tr>
-                                                    <td><img src="<?php echo base_url() ?>assets/img/phone.png" height="30px" alt=""><br></td>
-                                                    <td style="text-align: right;">
-                                                        Cel. &nbsp;&nbsp; 301&nbsp;&nbsp;&nbsp; 385 &nbsp;9952<br>
-                                                        Cel. &nbsp;&nbsp; 312&nbsp;&nbsp;&nbsp; 421 &nbsp;2513<br>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table> 
-                            </div>
-                        </div>
-                    </div>
-                </header>
-
-
-                <section class="menu-slide">
-                    <nav>
-                        <div class="con-nav">
-                            <ul class="main-nav fl">
-                                <li class="first"><a href="index.php" id="nav-bt0"><span></span> 
-                                        <!--<div class="nav-br"></div>--> 
-                                    </a></li>
-                                <li> <a id="nav-bt1" style="cursor:default;" >Quienes Somos
-                                        <div class="nav-br"></div>
-                                    </a>
-                                    <ul class="sub-nav">
-                                        <li><a href="javascript:" >Perfil de la compañia</a></li>
-                                        <li><a href="javascript:" >Permisos y habilidades</a></li>
-                                        <li><a href="javascript:" >Misión</a></li>
-                                        <li><a href="javascript:" >Visión</a></li>
-                                        <li><a href="javascript:" >Valores Corporativos</a></li>
-                                    </ul>
-                                </li>
-                                <li> <a id="nav-bt2" style="cursor:default;">Proyectos
-                                        <div class="nav-br"></div>
-                                    </a>
-                                    
-                                </li>
-                                <li> <a id="nav-bt3" style="cursor:default;">Servicio
-                                        <div class="nav-br"></div>
-                                    </a>
-                                    <ul class="sub-nav">
-                                        <li><a href="javascript:" >Nuestros Servicios</a></li>
-                                        <!--<li><a href="javascript:" >CLIENTE - PROVEEDOR</a></li>-->
-                                    </ul>
-                                </li>
-                                <li> <a id="nav-bt4" style="cursor:default;">Contactenos
-                                        <div class="nav-br"></div>
-                                    </a> 
-                                    <ul class="sub-nav">
-                                        <li><a href="javascript:" >Contactenos</a></li>
-                                    </ul>
-                                </li>
-                                <li> <a id="nav-bt4" style="cursor:default;">TRABAJE CON NOSOTROS
-                                        <div class="nav-br"></div>
-                                    </a> 
-                                </li>
-                            </ul>
-                            <!--<div class="header-redes fr"> <a class="header-red red-fb" href="https://www.facebook.com/" target="_blank"></a> <a class="header-red red-tw" href="https://twitter.com/" target="_blank"></a> </div>--> 
-                        </div>
-                    </nav>
-                    <!--            <div class="con-section">
-                                    <div class="mg-section cfx">
-                                        <div class="con-slider" >
-                                            <div class="main-slider" id="rotador" style="position:absolute !important;margin-top:50px;">
-                                                <div class="slide"><img src="<?php echo base_url() ?>assets/img/slide-4.jpg" height="440" style="width: 960px" alt=""></div>
-                                                <div class="slide"><img src="<?php echo base_url() ?>assets/img/slide-11.jpg" height="440" style="width: 960px" alt=""></div>
-                                                <div class="slide"><img src="<?php echo base_url() ?>assets/img/slide-10.jpg" height="440" style="width: 960px" alt=""></div>
-                                                <div class="slide"><img src="<?php echo base_url() ?>assets/img/slide-14.jpg" height="440" style="width: 960px" alt=""></div>
-                                                <div class="slide"><img src="<?php echo base_url() ?>assets/img/slide-2.jpg" height="440" style="width: 960px" alt=""></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>-->
-                </section>
-            </div>
-        </div>
-
-        <!--        <div  style="margin:0 auto;width: 700px;">
-                    <div style="margin-top: -350px;position: absolute; z-index: 1999;color: #FFF">
-                        <img src="<?php echo base_url() ?>assets/img/header-logo.png" height="106" alt="">
-                        <h3> <b>OPERADOR LOGISTICO INTEGRAL</b></h3>
-                        Calidad en el Trabajo, Excelencia en el Servicio.
-                    </div>
-                </div>-->
-
-        <script type="text/javascript" src="<?php echo base_url() ?>assets/js/lib/jquery.min.js"></script> 
-        <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.plugs.min.js"></script> 
-        <script type="text/javascript" src="<?php echo base_url() ?>assets/js/actions.js"></script>
-        <!--<div class="preload"></div><img class="load" src="<?php echo base_url() ?>assets/img/preload.gif" width="128" height="128" />-->
-        <br>
-
-        <div style="margin-top: 100px ">
-            <div class="container">
-                <div class="row contenido">
-                    esto es una prueba
+        <div class="col-md-8 col-xs-8 col-sm-8 col-lg-8">
+            <div class="row principal">
+                <div class="menu col-md-3 col-xs-3 col-sm-3 col-lg-3" style="z-index: 1;cursor: pointer;">
+                    <a href="#dos">CONOSCANOS</a>
                 </div>
-
-
-
-            </div>
-        </div>
-    </body>
-    <footer class="footer" style="margin-top: 80px ">
-        <div class="row" style="">
-            <div class="container foot_listo2">
-                <div class="col-md-8 col-lg-8 col-sm-8 col-sx-8">
-                    <p class="text-muted">Copyright Â© 2015 texto - Nygsoft.com</p>
+                <div class="menu col-md-3 col-xs-3 col-sm-3 col-lg-3" style="z-index: 1;cursor: pointer;">
+                    <a href="#tres">PROYECTOS</a>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-4 col-sx-4" align="center">
-                    <img style="width: 70px" src="http://localhost/NYGSOFT/img/nygsoft.jpg">
+                <div class="menu col-md-3 col-xs-3 col-sm-3 col-lg-3" style="z-index: 1;cursor: pointer;">
+                    <a href="#cuatro">CONTÁCTANOS</a>
                 </div>
             </div>
         </div>
-    </footer>
-</html>
+        <div class="col-md-5 col-xs-5"></div>
+    </div>
+</div>
+<div class="row" id="cero" style="width: 100%;height: 700px;background-color: #ABE9F5;"> 
+    <div id="agrandado" style="width: 16%;background-color: red;position: relative;left: 43%;top: 30%">
+        <img  style="width: 100%;" src="<?php echo base_url('img/nigsoftlogo.png') ?>"  />
+    </div>
+</div>
+<div id="uno" class="row" style="width: 100%;height: 500px;background-color: #FABAB3;">
+    <div id="agrandado" style="width: 16%;background-color: red;position: relative;left: 67%;top: 30%">
+        <img  style="width: 100%;" src="<?php echo base_url('img/nigsoftlogo.png') ?>"  />
+    </div>
+</div>
+<div id="dos" class="row" style="width: 100%;height: 500px;background-color: #FAB3E8;">
+    <div id="agrandado" style="width: 16%;background-color: red;position: relative;left: 43%;top: 30%">
+        <img  style="width: 100%;" src="<?php echo base_url('img/nigsoftlogo.png') ?>"  />
+    </div>
+</div>
+<div id="tres" class="row" style="width: 100%;height: 500px;background-color: #E7F8E0;">
+    <div id="agrandado" style="width: 16%;background-color: red;position: relative;left: 14%;top: 30%">
+        <img  style="width: 100%;" src="<?php echo base_url('img/nigsoftlogo.png') ?>"  />
+    </div>
+</div>
+<div id="cuatro" class="row" style="width: 100%;height: 500px;background-color: #DBD9D9;">
+    <div id="agrandado" style="width: 16%;background-color: red;position: relative;left: 43%;top: 30%">
+        <img  style="width: 100%;" src="<?php echo base_url('img/nigsoftlogo.png') ?>"  />
+    </div>
+</div>
+<div id="cinco" class="row" style="width: 100%;height: 500px;background-color: #FFD5EC;">
+    <div id="agrandado" style="width: 16%;background-color: red;position: relative;left: 67%;top: 30%">
+        <img  style="width: 100%;" src="<?php echo base_url('img/nigsoftlogo.png') ?>"  />
+    </div>
+</div>
+<script>
+    $(".preload, .load").hide();
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 342 && scroll <= 645) {
+            $('#uno').css('background-color', 'black');
+        }
+        if (scroll >= 760 && scroll <= 1140) {
+
+//            $('#agrandado').animate({height: '300px', opacity: '0.4'}, "slow");
+//            $('#agrandado').animate({width: '300px', opacity: '0.8'}, "slow");
+//            $('#agrandado').animate({height: '100px', opacity: '0.4'}, "slow");
+//            $('#agrandado').animate({width: '100px', opacity: '0.8'}, "slow");
 
 
-<form method="GET" action="accion.php" id="enviar">
-    <input type="hidden" id="accion" name="accion">
-    <input type="hidden" id="titulo" name="titulo">
-</form>
+            $('#dos').css('background-color', 'blue');
+        }
+        if (scroll >= 1254 && scroll <= 1634) {
+            $('#tres').css('background-color', 'red');
+        }
+        if (scroll >= 1786 && scroll <= 2128) {
+            $('#cuatro').css('background-color', 'yellow');
+        }
+        if (scroll >= 2292) {
+            $('#cinco').css('background-color', 'black');
+        }
+
+
+
+        console.log(scroll);
+    });
+
+</script>    

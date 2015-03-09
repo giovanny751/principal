@@ -1,0 +1,56 @@
+/*.container{
+    width: 960px;
+    margin: 0 auto;
+}
+body{
+    background: #fff;
+}
+
+#col-1{
+    width: 50%;
+    float: left;
+    background-color: red;
+}
+#col-2{
+        width: 40%;
+    float: right;
+    background-color: green;
+    
+}
+
+media queries de css3
+
+@media screen and (max-width: 480px){
+    .container{
+        width: 70%;
+    }
+    #col-1, #col-2{
+        width: 100%;
+    }
+
+}
+@media screen and (min-width: 481px) and (max-width: 767px){
+    .container{
+        width: 85%;
+    }
+    #col-1, #col-2{
+        width: 100%;
+    }
+
+}
+@media screen and (min-width: 768px) {
+    
+    .container{
+        width: 70;
+    }
+    
+    body{
+        
+            background: url('../img/nigsoftlogo.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 250px;
+            width: 100%;
+    }
+
+}*/
