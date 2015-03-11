@@ -6,7 +6,7 @@
     width: 25%;
     height: 25%;
     bottom: 0px;
-    /*position: fixed;*/
+    position: fixed;
 }
 .cuadro1,.cuadro1opa,.cuadro2,.cuadro2opa{
     /*background-image: url(img/cuadro1.png);*/
