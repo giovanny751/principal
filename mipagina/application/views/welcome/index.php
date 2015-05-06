@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Empresa que desarrolla Aplicativos Empresariales,  Paginas Web Corporativas y Software Administrativos">
     <meta name="author" content="Nelson Barbosa 312 421 2513 Bogota Colombia">
 
     <title>NYGSOFT Technology</title>
@@ -74,9 +74,9 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Your Favorite Source of Free Bootstrap Themes</h1>
+                <h1 style="font-size: 626px">Su pagina web en minutos</h1>
                 <hr>
-                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+                <p>Desarrollamos Aplicativos Empresariales,  Paginas Web Corporativas y Software Administrativos</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Obtenga más información</a>
             </div>
         </div>
@@ -86,10 +86,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
+                    <h2 class="section-heading">Tenemos lo que necesitas!</h2>
                     <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                    <p class="text-faded">NYGSOFT TECNOLOGY S.A. nació a partir de la necesidad de poder ayudar y «agilizar toda clase de procesos» logísticos de manera virtual, del modo más sencillo y dinámico posible para la administración del contenido.</p>
+                    <a href="#" class="btn btn-default btn-xl">Arriba!</a>
                 </div>
             </div>
         </div>
@@ -99,7 +99,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h2 class="section-heading">A su servicio</h2>
                     <hr class="primary">
                 </div>
             </div>
